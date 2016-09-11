@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>I'm the Webmaster Now</title>
+
+    <!-- Write your own website description here -->
+    <meta name="description" content="Ramshackle is a responsive boilerplate with some light styling. It handles the under the hood stuff so you can quickstart a prototype or a simple website in no time.">
+
+    <!-- Add your name is you want to -->
+    <meta name="author" content="Daniel Strong">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- External font links -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+
+    <!-- Add all of your custom CSS to style.css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/ramshackle-2.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Make your very own icon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body>
+
+<div class="superhero dead-center light">
+    <h1>Color Palette</h1>
+    <div class="row center">
+        <div class="col-2 bg-light">
+        </div>
+        <div class="col-2 bg-dark">
+        </div>
+        <div class="col-2 bg-primary">
+        </div>
+        <div class="col-2 bg-secondary">
+        </div>
+    </div>
+    <br />
+    <div class="row center">
+        <div class="col-9 flex-row">
+            <button class="btn bg-dark secondary">Button</button>
+            <button class="btn bg-primary light">Button</button>
+            <button class="btn bg-secondary dark">Button</button>
+        </div>
+    </div>
+</div>
+
+<!-- Misc text tests -->
+
+<div class="row">
+    <div class="col-4 left">
+        <p>Tolkien ipsum kirinki aglarond telcontari lanthir hyarmentir uinen. Imadris ainur landroval meriadoc dairuin bilbo hornburg kirinki narya. Bombur amon gandalf finrod balar tulkas arda hathaldir esgaroth carcharoth. Elwing isen helmingas gollum shadowfax.</p>
+        <div>
+            <span class="tag bg-primary light">Tag</span>
+            <span class="tag bg-secondary">Tag</span>
+            <span class="tag bg-dark light">Tag</span>
+        </div>
+    </div>
+    <div class="col">
+    <p>FLEX amon gandalf finrod balar tulkas arda hathaldir esgaroth carcharoth. Elwing isen helmingas gollum shadowfax. Bombur amon gandalf finrod balar tulkas arda hathaldir esgaroth carcharoth. Elwing isen helmingas gollum shadowfax.</p>
+    <div class="quote">
+    Azog kirinki thorin uilos tathar orocarni adurant hareth. Arnoediad tareldar bilbo.
+    </div>
+    <div class="notification success">
+    <button class="close"></button>
+    Success bombur amon gandalf finrod balar.
+    </div>
+    <div class="notification error">
+    <button class="close"></button>
+    Error bombur amon gandalf finrod balar.
+    </div>
+    <div class="notification info">
+    <button class="close"></button>
+    Info bombur amon gandalf finrod balar.
+    </div>
+</div>
+</div>
+
+<!-- Row in a column test -->
+
+<div class="hero bg-primary">
+    <div class="row">
+        <div class="col-8 light">
+            <h3>Tolkien ipsum</h3>
+            Kirinki aglarond telcontari lanthir hyarmentir uinen. Imadris ainur landroval meriadoc dairuin bilbo hornburg kirinki narya. Bombur amon gandalf finrod balar tulkas arda hathaldir esgaroth carcharoth. Elwing isen helmingas gollum shadowfax. Kirinki aglarond telcontari lanthir hyarmentir uinen. Imadris ainur landroval meriadoc dairuin bilbo hornburg kirinki narya. Bombur amon gandalf finrod balar tulkas arda hathaldir esgaroth carcharoth. Elwing isen helmingas gollum shadowfax.
+            <div class="row">
+                <div class="col-4 dark">
+                <h5>Subtitle 1</h5>
+                Elwing isen helmingas gollum shadowfax. Kirinki aglarond telcontari lanthir hyarmentir uinen. Imadris ainur landroval meriadoc dairuin bilbo hornburg kirinki narya. Bombur amon gandalf finrod balar tulkas arda hathaldir esgaroth carcharoth.
+                </div>
+                <div class="col-4 dark">
+                <h5>Subtitle 2</h5>
+                Elwing isen helmingas gollum shadowfax. Kirinki aglarond telcontari lanthir hyarmentir uinen. Imadris ainur landroval meriadoc dairuin bilbo hornburg kirinki narya.
+                </div>
+                <div class="col-4 dark">
+                <h5>Subtitle 3</h5>
+                Elwing isen helmingas gollum shadowfax. Kirinki aglarond telcontari lanthir hyarmentir uinen. Imadris ainur landroval meriadoc dairuin bilbo hornburg kirinki narya.
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <h3>Elwing Isen</h3>
+            kirinki aglarond telcontari lanthir hyarmentir uinen. Imadris ainur landroval meriadoc dairuin bilbo hornburg kirinki narya. Bombur amon gandalf finrod balar tulkas arda hathaldir esgaroth carcharoth. Elwing isen helmingas gollum shadowfax.
+            <img src="img/tree_of_gondor.svg">
+        </div>
+    </div>
+</div>
+
+<!-- Inputs and forms -->
+
+<div class="hero bg-dark secondary">
+    <div class="row">
+        <div class="col-6">
+            <h3>Elwing Isen</h3>
+            <p>kirinki aglarond <code>telcontari lanthir</code> hyarmentir uinen. Imadris ainur landroval meriadoc dairuin bilbo hornburg kirinki narya. Bombur amon gandalf finrod balar tulkas arda hathaldir esgaroth carcharoth. Elwing isen helmingas gollum shadowfax.</p>
+            <form class="pull-left">
+                <label for="name">Name</label>
+                <input type="text" id="name" />
+                <label for="email">Email</label>
+                <input type="email" id="email" />
+                <input type="submit" class="bg-primary" value="Send" />
+                <input type="reset" class="bg-secondary" value="Reset" />
+                <br />
+                <input type="checkbox" id="check1" />
+                <label for="check1"><span></span>Checkbox</label>
+                <input type="checkbox" id="check2" />
+                <label for="check2"><span></span>Checkbox 2</label>
+                <br />
+                <div>
+                <input type="radio" name="radio" id="radio1" />
+                <label for="radio1"><span></span>Radio</label>
+                <input type="radio" name="radio" id="radio2" />
+                <label for="radio2"><span></span>Radio 2</label>
+                </div>
+                <br/>
+                <textarea></textarea>
+        </div>
+        <div class="col-6 primary">
+            <h3>Finrod Balar</h3>
+            <p>kirinki aglarond telcontari lanthir hyarmentir uinen. Imadris ainur landroval meriadoc dairuin bilbo hornburg kirinki narya. Bombur amon gandalf finrod balar tulkas arda hathaldir esgaroth carcharoth. Elwing isen helmingas gollum shadowfax.</p>
+            <img src="img/tree_of_gondor.svg">
+        </div>
+    </div>
+</div>
+<div class="hero bg-primary light">
+    <div class="row">
+        <div class="col">
+            <h3>Tolkien ipsum</h3>
+            <p>kirinki aglarond <code>telcontari lanthir</code> hyarmentir uinen. Imadris ainur landroval meriadoc dairuin bilbo hornburg kirinki narya. Bombur amon gandalf finrod balar tulkas arda hathaldir esgaroth carcharoth. Elwing isen helmingas gollum shadowfax.</p>
+        </div>
+        <div class="col-4">
+            <h3 class="hide-on-small">Elwing Isen</h3>
+            <p>kirinki aglarond telcontari lanthir hyarmentir uinen. Imadris ainur landroval meriadoc dairuin bilbo hornburg kirinki narya. Bombur amon gandalf finrod balar tulkas arda hathaldir esgaroth carcharoth. Elwing isen helmingas gollum shadowfax.</p>
+<pre><code>&lt;div class="row"&gt;
+    &lt;div class="col-6 bg-primary text-secondary"&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+        <div class="col">
+            <h3>Finrod Balar</h3>
+            <p>kirinki aglarond telcontari lanthir hyarmentir uinen. Imadris ainur landroval meriadoc dairuin bilbo hornburg kirinki narya. Bombur amon gandalf finrod balar tulkas arda hathaldir esgaroth carcharoth. Elwing isen helmingas gollum shadowfax.</p>
+            <p><strong>Ordered List</strong></p>
+            <ol>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+            </ol>
+            <p><strong>Unordered List</strong></p>
+            <ul>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

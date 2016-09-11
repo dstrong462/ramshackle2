@@ -1,0 +1,38 @@
+/*  FONT DECLARATIONS (Customize Me!)
+===================================== */
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6, button {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+/*  COLOR PALETTE (Customize Me!)
+===================================== */
+
+/* These control your TEXT colors */
+body { color: #262626; }
+.dark { color: #262626; }
+.light { color: #fff; }
+.primary { color: #e34234; }
+.secondary { color: #76DDC9; }
+.accent { color: #ececee; }
+
+/* These control your BACKGROUND colors */
+body { background-color: #ececee; }
+.bg-dark { background-color: #353535; }
+.bg-light { background-color: #fff; }
+.bg-primary { background-color: #e34234; }
+.bg-secondary { background-color: #76DDC9; }
+.bg-accent { background-color: #ececee; }
+
+.info { background-color: #d4d4d4; }
+.success { background-color: #adebdf; }
+.error { background-color: #ee8e85; }
+
+/*  ADD YOUR CUSTOM STYLES HERE
+===================================== */
