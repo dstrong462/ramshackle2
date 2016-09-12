@@ -15,11 +15,11 @@ img, svg {
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?ldqszl');
-  src:  url('../fonts/icomoon.eot?ldqszl#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?ldqszl') format('truetype'),
-    url('../fonts/icomoon.woff?ldqszl') format('woff'),
-    url('../fonts/icomoon.svg?ldqszl#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?tfexbb');
+  src:  url('../fonts/icomoon.eot?tfexbb#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?tfexbb') format('truetype'),
+    url('../fonts/icomoon.woff?tfexbb') format('woff'),
+    url('../fonts/icomoon.svg?tfexbb#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -276,8 +276,7 @@ input[type='tel'],
 input[type='text'],
 input[type='url'],
 textarea,
-select,
-option {
+select {
     box-sizing: border-box;
     width: 100%;
     height: 40px;
@@ -293,6 +292,35 @@ option {
     padding: 6px 12px 1px 12px;
     margin: 2px 0 6px 0;
     transition: background-color .5s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.select {
+    display: block;
+    position: relative;
+    margin: 25px 0 0 0;
+}
+
+.select:after {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    pointer-events: none;
+    font-family: 'icomoon';
+    font-size: 16px;
+    line-height: 16px;
+    content: '\ea1c';
+    color: #999;
+    transform: rotate(90deg);
+    padding: 0;
+    margin: 0;
+}
+
+option {
+    font-size: .85em;
+    padding: 6px 4px 6px 24px;
 }
 
 input:focus,
@@ -426,6 +454,8 @@ li {
     transition: opacity .5s;
     z-index: 999;
 }
+
+.disable-scroll { overflow: hidden; }
 
 .modal {
     display: none;

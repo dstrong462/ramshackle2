@@ -4,6 +4,7 @@ var closeButtons = document.querySelectorAll('.close');
 
 for (var i = 0; i < closeButtons.length; i++) {
     closeButtons[i].addEventListener('click', function() {
+        document.body.classList.remove('disable-scroll');
         overlay.style.display = 'none';
         this.parentNode.style.opacity = '0';
         var temp = this;
@@ -26,6 +27,7 @@ for (var i = 0; i < modalButtons.length; i++) {
         overlay.style.display = 'inline';
         modals[i].style.display = 'inline';
         modals[i].style.opacity = '1';
+        document.body.classList.add('disable-scroll');
         });
     })(i);
 }
