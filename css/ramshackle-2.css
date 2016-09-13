@@ -35,17 +35,6 @@ img, svg {
 /*  THE GRID
 ================================== */
 
-.hero {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100vw;
-    max-width: 100%;
-    text-align: center;
-    padding: 50px 0;
-    margin: auto;
-}
-
 .superhero {
     display: flex;
     flex-wrap: wrap;
@@ -60,6 +49,17 @@ img, svg {
     background-size: cover;
     text-align: center;
     padding: 50px;
+    margin: 0 auto;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    max-width: 100%;
+    text-align: center;
+    padding: 50px 0;
     margin: 0 auto;
 }
 
@@ -320,7 +320,7 @@ select {
 
 option {
     font-size: .85em;
-    padding: 6px 4px 6px 24px;
+    padding: 8px 16px;
 }
 
 input:focus,
@@ -481,7 +481,7 @@ li {
     text-align: center;
     background-color: #e4e4e4;
     border: 1px solid rgba(0,0,0,.1);
-    border-left: 8px solid #76DDC9;
+    border-bottom: 8px solid #76DDC9;
     border-radius: 4px;
     padding: 25px 30px;
     margin: 25px auto;
@@ -548,6 +548,8 @@ li {
     font-size: .9em;
     font-weight: bold;
     border-radius: 8px;
+    border: 1px solid rgba(0,0,0,.1);
+    border-bottom: 3px solid rgba(0,0,0,.2);
     padding: 3px 18px;
     margin: 4px 4px 4px 0;
 }
