@@ -27,11 +27,23 @@
 </head>
 
 <body>
+<!--
 
+
+
+
+WORKING ON PULL-UP, ETC
+
+
+
+
+ -->
 <div id="overlay"></div>
 
 <div class="superhero light">
+    <div class="row">
     <h1>Color Palette</h1>
+    </div>
     <div class="row">
         <div class="col-2 bg-light">
         </div>
@@ -44,9 +56,9 @@
     </div>
     <div class="row">
         <div class="col-8 flex-row">
-            <button class="btn bg-dark secondary">Button</button>
+            <button class="btn bg-dark secondary bottom">Button</button>
             <button class="btn bg-primary light">Button</button>
-            <button class="btn bg-secondary dark">Button</button>
+            <button class="btn bg-secondary dark top">Button</button>
         </div>
     </div>
 </div>
@@ -55,7 +67,7 @@
 
 <section>
     <div class="row">
-        <div class="col-4 left">
+        <div class="col-4">
             <p>Tolkien ipsum kirinki aglarond telcontari lanthir hyarmentir uinen. Imadris ainur landroval meriadoc dairuin bilbo hornburg kirinki narya. Bombur amon gandalf finrod balar tulkas arda hathaldir esgaroth carcharoth. Elwing isen helmingas gollum shadowfax.</p>
             <div>
                 <span class="tag bg-primary light">Tag</span>
@@ -65,9 +77,9 @@
             <div class="modal bg-secondary">Anglachel thrush fallohides treebeard elendur shelob forgoil ravenhill dimbar galenas. Lanthir orodruin dagnir nahar adurant valvar cirdan snowmane easterling sirion.
             <button class="close"></button>
             </div>
-            <button class="btn bg-primary">Modal Popup</button>
+            <button class="btn bg-primary bottom">Modal Popup</button>
         </div>
-        <div class="col">
+        <div class="col-5">
             <p>FLEX amon gandalf finrod balar tulkas arda hathaldir esgaroth carcharoth. Elwing isen helmingas gollum shadowfax. Bombur amon gandalf finrod balar tulkas arda hathaldir esgaroth carcharoth. Elwing isen helmingas gollum shadowfax.</p>
             <div class="quote">
             Azog kirinki thorin uilos tathar orocarni adurant hareth. Arnoediad tareldar bilbo.
@@ -100,11 +112,11 @@
                 <h5>Subtitle 1</h5>
                 Elwing isen helmingas gollum shadowfax. Kirinki aglarond telcontari lanthir hyarmentir uinen. Imadris ainur landroval meriadoc dairuin bilbo hornburg kirinki narya. Bombur amon gandalf finrod balar tulkas arda hathaldir esgaroth carcharoth.
                 </div>
-                <div class="col-4 dark">
+                <div class="col-4 dark bottom">
                 <h5>Subtitle 2</h5>
                 Elwing isen helmingas gollum shadowfax. Kirinki aglarond telcontari lanthir hyarmentir uinen. Imadris ainur landroval meriadoc dairuin bilbo hornburg kirinki narya.
                 </div>
-                <div class="col-4 dark">
+                <div class="col-4 dark middle">
                 <h5>Subtitle 3</h5>
                 Elwing isen helmingas gollum shadowfax. Kirinki aglarond telcontari lanthir hyarmentir uinen. Imadris ainur landroval meriadoc dairuin bilbo hornburg kirinki narya.
                 </div>
@@ -113,7 +125,7 @@
         <div class="col-4">
             <h3>Elwing Isen</h3>
             kirinki aglarond telcontari lanthir hyarmentir uinen. Imadris ainur landroval meriadoc dairuin bilbo hornburg kirinki narya. Bombur amon gandalf finrod balar tulkas arda hathaldir esgaroth carcharoth. Elwing isen helmingas gollum shadowfax.
-            <img src="img/tree_of_gondor.svg">
+            <img class="size-75 bottom" src="img/tree_of_gondor.svg">
         </div>
     </div>
 </section>
@@ -125,7 +137,7 @@
         <div class="col-6">
             <h3>Elwing Isen</h3>
             <p>kirinki aglarond <code>telcontari lanthir</code> hyarmentir uinen. Imadris ainur landroval meriadoc dairuin bilbo hornburg kirinki narya. Bombur amon gandalf finrod balar tulkas arda hathaldir esgaroth carcharoth. Elwing isen helmingas gollum shadowfax.</p>
-            <form class="pull-left">
+            <form>
                 <label for="name">Name</label>
                 <input type="text" id="name" />
                 <label for="email">Email</label>
@@ -136,9 +148,11 @@
                         <option>Extra Options</option>
                     </select>
                 </label>
-                <input type="submit" class="bg-primary" value="Send" />
-                <input type="reset" class="bg-secondary" value="Reset" />
-                <br />
+                <div class="btn-group">
+                    <input type="submit" class="btn bg-primary" value="Send" />
+                    <input type="reset" class="btn bg-secondary" value="Reset" />
+                    <input type="reset" class="btn bg-accent dark" value="Third" />
+                </div>
                 <input type="checkbox" id="check1" />
                 <label for="check1"><span></span>Checkbox</label>
                 <input type="checkbox" id="check2" />
@@ -157,10 +171,13 @@
         <div class="col-6 primary">
             <h3>Finrod Balar</h3>
             <p>kirinki aglarond telcontari lanthir hyarmentir uinen. Imadris ainur landroval meriadoc dairuin bilbo hornburg kirinki narya. Bombur amon gandalf finrod balar tulkas arda hathaldir esgaroth carcharoth. Elwing isen helmingas gollum shadowfax.</p>
-            <img src="img/tree_of_gondor.svg">
+            <img class="size-70" src="img/tree_of_gondor.svg">
         </div>
     </div>
 </section>
+
+<!-- Code and lists -->
+
 <section class="bg-primary light">
     <div class="row">
         <div class="col">
@@ -194,6 +211,21 @@
                 <li>test</li>
                 <li>test</li>
             </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Position Tests -->
+
+<section>
+    <div class="row">
+        <div class="col-4">
+            <h3>Tolkien ipsum</h3>
+            <p class="">Kirinki aglarond telcontari lanthir hyarmentir uinen. Imadris ainur landroval meriadoc dairuin bilbo hornburg kirinki narya.</p>
+        </div>
+        <div class="col-4">
+            <h3>Elwing Isen</h3>
+            <p>Tolkien ipsum elros elros carcharoth anacalagon galadhrim arnoediad anfauglith cirith landroval. Goldberry elendil galenas smial hithlum eglath smaug. Pelargir himring mardil vanyar nienor turambar isengrim belain dorlas vardarianna. Aldaron wose arien fornost amras dori rhovanion taniquetil. Marish guldur isen thoron nessamelda bregolas shagrat uilos snaga doriath. Lembas balar calenardhon carcharoth lothlann falas halmir angmar silmaril.</p>
         </div>
     </div>
 </section>
