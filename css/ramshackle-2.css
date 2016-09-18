@@ -374,7 +374,6 @@ li {
     padding-left: .75em;
 }
 
-
 /*  EXTRA FEATURES
 ================================== */
 
@@ -400,6 +399,8 @@ li {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
+    max-width: 600px;
+    font-size: 1.2em;
     border-top: 16px solid rgba(0,0,0,.14);
     border-radius: 4px;
     box-shadow: 0 0 4px 8px rgba(0,0,0,.1);
@@ -550,7 +551,6 @@ li {
 }
 .bottom {
     margin-top: auto;
-    margin-bottom: 0;
 }
 
 /* These horizontally move 'rows' within a container */
@@ -654,6 +654,11 @@ li {
     padding-right: 0;
 }
 
+br {
+    content: '';
+    margin: 1em;
+}
+
 
 /*  MEDIA QUERY BREAKPOINTS
 ================================== */
@@ -672,13 +677,12 @@ li {
     }
     .quote {
         width: 100%;
-        font-size: .85em;
+        font-size: .95em;
         line-height: 1.4em;
         padding: 25px 5px;
     }
     .notification {
         font-size: .9em;
-        line-height: 1.4em;
         padding-top: 30px;
     }
 }
