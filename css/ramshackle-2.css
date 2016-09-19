@@ -795,7 +795,7 @@ br {
     }
     .modal {
         width: 92%;
-        max-height: 92%;
+        max-height: 82%;
         font-size: 1em;
         padding: 50px 30px;
     }
