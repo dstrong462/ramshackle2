@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- External font links -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
 
     <!-- Add all of your custom CSS to style.css -->
@@ -44,9 +44,9 @@
     </div>
     <div class="row">
         <div class="col-8 flex-row">
-            <button class="btn bg-dark secondary bottom">Button</button>
+            <button class="btn bg-dark secondary">Button</button>
             <button class="btn bg-primary light">Button</button>
-            <button class="btn bg-secondary dark top">Button</button>
+            <button class="btn bg-secondary dark">Button</button>
         </div>
     </div>
 </div>
@@ -55,9 +55,15 @@
 
 <section>
     <div class="row">
-        <div class="col-4">
+        <div class="col">
             <p>Tolkien ipsum kirinki aglarond telcontari lanthir hyarmentir uinen. Imadris ainur landroval meriadoc dairuin bilbo hornburg kirinki narya. Bombur amon gandalf finrod balar tulkas arda hathaldir esgaroth carcharoth. Elwing isen helmingas gollum shadowfax.</p>
             <div>
+                <span class="tag bg-primary light">Tag</span>
+                <span class="tag bg-secondary">Tag</span>
+                <span class="tag bg-dark light">Tag</span>
+                <span class="tag bg-primary light">Tag</span>
+                <span class="tag bg-secondary">Tag</span>
+                <span class="tag bg-dark light">Tag</span>
                 <span class="tag bg-primary light">Tag</span>
                 <span class="tag bg-secondary">Tag</span>
                 <span class="tag bg-dark light">Tag</span>
@@ -71,7 +77,7 @@
             </div>
             <button class="btn bg-primary">Modal Popup 2</button>
         </div>
-        <div class="col-5">
+        <div class="col-8">
             <p>FLEX amon gandalf finrod balar tulkas arda hathaldir esgaroth carcharoth. Elwing isen helmingas gollum shadowfax. Bombur amon gandalf finrod balar tulkas arda hathaldir esgaroth carcharoth. Elwing isen helmingas gollum shadowfax.</p>
             <div class="quote">
             Azog kirinki thorin uilos tathar orocarni adurant hareth. Arnoediad tareldar bilbo.
@@ -88,6 +94,12 @@
             <button class="close"></button>
             Info bombur amon gandalf finrod balar.
             </div>
+
+            <div class="info-title bg-secondary light">Info Title</div>
+            <div class="info-body">
+            <p>Elwing isen helmingas gollum shadowfax. Bombur amon gandalf finrod balar tulkas arda hathaldir esgaroth carcharoth. Elwing isen helmingas gollum shadowfax.</p>
+            </div>
+
         </div>
     </div>
 </section>
@@ -207,18 +219,87 @@
     </div>
 </section>
 
-<!-- Position Tests -->
+<!-- Tables -->
 
-<section>
+<section class="hero bg-dark">
     <div class="row">
-        <div class="col-4">
-            <h3>Tolkien ipsum</h3>
-            <p class="">Kirinki aglarond telcontari lanthir hyarmentir uinen. Imadris ainur landroval meriadoc dairuin bilbo hornburg kirinki narya.</p>
-        </div>
-        <div class="col-4">
-            <h3>Elwing Isen</h3>
-            <p>Tolkien ipsum elros elros carcharoth anacalagon galadhrim arnoediad anfauglith cirith landroval. Goldberry elendil galenas smial hithlum eglath smaug. Pelargir himring mardil vanyar nienor turambar isengrim belain dorlas vardarianna. Aldaron wose arien fornost amras dori rhovanion taniquetil. Marish guldur isen thoron nessamelda bregolas shagrat uilos snaga doriath. Lembas balar calenardhon carcharoth lothlann falas halmir angmar silmaril.</p>
-        </div>
+        <table class="col-8 bg-accent">
+          <thead class="secondary">
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Gender</th>
+              <th>Favorite Food</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Daniel</td>
+              <td>35</td>
+              <td>Dude</td>
+              <td>Cheeseburgers</td>
+            </tr>
+            <tr>
+              <td>Melissa</td>
+              <td>35</td>
+              <td>Dudette</td>
+              <td>Tacos</td>
+            </tr>
+            <tr>
+              <td>Gavin</td>
+              <td>1.9</td>
+              <td>Dude</td>
+              <td>Mac Cheese</td>
+            </tr>
+            <tr>
+              <td>Ribbit</td>
+              <td>9</td>
+              <td>Dudette</td>
+              <td>Green Beans</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="superhero">
+    <div class="row middle right">
+        <table class="col-8 light bg-dark border-secondary">
+          <thead class="accent">
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Gender</th>
+              <th>Favorite Food</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Daniel</td>
+              <td>35</td>
+              <td>Dude</td>
+              <td>Cheeseburgers</td>
+            </tr>
+            <tr>
+              <td>Melissa</td>
+              <td>35</td>
+              <td>Dudette</td>
+              <td>Tacos</td>
+            </tr>
+            <tr>
+              <td>Gavin</td>
+              <td>1.9</td>
+              <td>Dude</td>
+              <td>Mac Cheese</td>
+            </tr>
+            <tr>
+              <td>Ribbit</td>
+              <td>9</td>
+              <td>Dudette</td>
+              <td>Green Beans</td>
+            </tr>
+          </tbody>
+        </table>
     </div>
 </section>
 

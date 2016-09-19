@@ -374,6 +374,64 @@ li {
     padding-left: .75em;
 }
 
+
+/*  TABLES
+================================== */
+
+table {
+    border-color: rgba(0,0,0,.1);
+}
+
+table,
+table[class*='col'] {
+    display: table;
+    cursor: default;
+    text-align: left;
+    border-spacing: 0;
+}
+
+.table-row {
+    overflow-x: auto;
+}
+
+th, td {
+    padding: 8px 10px;
+}
+
+th {
+    font-weight: bold;
+    border-bottom: 2px solid;
+}
+
+td {
+    border-top: 1px solid;
+}
+
+thead, tbody, tr, th, td {
+    border-color: inherit;
+}
+
+tr:hover {
+    background-color: rgba(0,0,0,.05);
+}
+
+thead tr:first-child:hover {
+    background-color: initial;
+}
+
+.striped tr:hover {
+    background-color: initial;
+}
+
+.striped tr:nth-child(2n) {
+    background-color: rgba(0,0,0,.05);
+}
+
+.striped td {
+    border-color: rgba(0,0,0,0);
+}
+
+
 /*  EXTRA FEATURES
 ================================== */
 
@@ -414,6 +472,7 @@ li {
     width: 85%;
     font-size: 1.1em;
     font-style: italic;
+    font-weight: normal;
     justify-content: center;
     text-align: center;
     background-color: #e4e4e4;
@@ -455,6 +514,31 @@ li {
     transition: opacity .5s;
 }
 
+.info-title {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: left;
+    border: 1px solid rgba(0,0,0,.1);
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+    padding: 5px 15px;
+    margin: 10px auto 0 auto;
+}
+
+.info-body {
+    display: block;
+    position: relative;
+    width: 100%;
+    font-size: .9em;
+    text-align: left;
+    border: 1px solid rgba(0,0,0,.1);
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    padding: 15px 25px;
+    margin: 0 auto 10px auto;
+}
+
 .close {
     position: absolute;
     top: 5px;
@@ -482,12 +566,14 @@ li {
 }
 
 .tag {
+    display: inline-flex;
     font-size: .9em;
     font-weight: bold;
+    line-height: 1.55em;
     border-radius: 8px;
     border: 1px solid rgba(0,0,0,.1);
     border-bottom: 3px solid rgba(0,0,0,.2);
-    padding: 3px 18px;
+    padding: 2px 16px;
     margin: 4px 4px 4px 0;
 }
 
@@ -664,12 +750,23 @@ br {
 ================================== */
 
 @media screen and (max-width: 480px) {
-    .superhero { height: 100%; }
+    .superhero {
+        height: 100%;
+    }
     input {
         width: 100%;
     }
+    .btn {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 15px 0 !important;
+    }
     .btn-group .btn {
         border-radius: 4px !important;
+    }
+    .table-row {
+        display: block;
     }
     .modal {
         width: 92%;

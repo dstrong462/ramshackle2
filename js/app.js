@@ -1,3 +1,12 @@
+// Find all rows that contain a table, and apply an extra class for better mobile viewing
+
+var tables = document.querySelectorAll('.row table');
+
+for (var i = 0; i < tables.length; i++) {
+    tables[i].parentNode.classList.add('table-row');
+}
+
+
 // Fade out and then remove notifications on click
 
 var closeButtons = document.querySelectorAll('.close');
