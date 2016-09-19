@@ -463,6 +463,7 @@ thead tr:first-child:hover {
     border-radius: 4px;
     box-shadow: 0 0 4px 8px rgba(0,0,0,.1);
     padding: 75px 50px;
+    margin: auto;
     transition: opacity .5s;
     z-index: 1000;
 }
@@ -769,10 +770,6 @@ br {
     .table-row {
         display: block;
     }
-    .modal {
-        width: 92%;
-        padding: 50px 30px;
-    }
     .quote {
         width: 100%;
         font-size: .95em;
@@ -795,6 +792,12 @@ br {
     .hero,
     .superhero {
         padding: 35px 0;
+    }
+    .modal {
+        width: 92%;
+        max-height: 92%;
+        font-size: 1em;
+        padding: 50px 30px;
     }
     .hide-on-small {
         display: none;
